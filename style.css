@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.2rem;
+}
+
+nav {
+  position: fixed;
+  background-color: #000;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+  padding: 0 20px;
+}
+
+.posts {
+  margin: 0 2em;
+  padding-top: 6em;
+}
+
+h1 {
+  margin-left: 0.45em;
+  font-size: 3rem;
+  color: #fff;
+}
+
+h2 {
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+hr {
+  border: 1.25px solid #000;
+  margin: 2em 0;
+}

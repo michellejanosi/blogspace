@@ -7,8 +7,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     for (let post of postsArr) {
       html += `
         <h2>${post.title}</h2>
-        <hr>
-        <p>${post.body}</p>`
+        <p>${post.body}</p>
+        <hr>`;
     }
 
     const posts = document.querySelector('.posts');

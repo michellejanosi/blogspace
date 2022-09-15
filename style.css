@@ -21,9 +21,21 @@ nav {
   padding: 0 20px;
 }
 
+.input-group {
+  margin: 0 2em;
+  padding-top: 8em;
+}
+
+.input, .content {
+  font-family: inherit;
+  padding: .50em;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
 .posts {
   margin: 0 2em;
-  padding-top: 7em;
+  padding-top: 6em;
 }
 
 h1 {
@@ -47,7 +59,7 @@ hr {
 }
 
 @media (min-width: 750px) {
-  .posts {
+  .posts, .input-group {
     width: 55%;
     margin: 0 auto;
   }

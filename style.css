@@ -22,20 +22,34 @@ nav {
 }
 
 .input-group {
+  display: grid;
   margin: 0 2em;
-  padding-top: 8em;
+  padding-top: 7em;
 }
 
 .input, .content {
   font-family: inherit;
-  padding: .50em;
+  padding: .5em;
+  margin-bottom: 1em;
   border: 1px solid #000;
   border-radius: 2px;
+}
+
+.content {
+  height: 20em;
+  width: 100%;
+  resize: none;
 }
 
 .posts {
   margin: 0 2em;
   padding-top: 6em;
+}
+
+#submit {
+    padding: .75em;
+    font-family: inherit;
+    font-size: 1.2rem;
 }
 
 h1 {
@@ -59,8 +73,16 @@ hr {
 }
 
 @media (min-width: 750px) {
-  .posts, .input-group {
-    width: 55%;
+  .posts,
+  .input-group {
     margin: 0 auto;
+  }
+
+  .posts {
+    width: 55%;
+  }
+
+  .input-group {
+    width: 40%;
   }
 }

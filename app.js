@@ -14,3 +14,14 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     const posts = document.querySelector('.posts');
     posts.innerHTML = html;
   })
+
+  document.querySelector('.input-group').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const postTitle = document.querySelector('.input').value;
+    const postContent = document.querySelector('.content').value;
+    const data = {
+      title: postTitle,
+      content: postContent
+    }
+    console.log(data);
+  })

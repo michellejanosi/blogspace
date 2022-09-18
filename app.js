@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll('.input, .content');
+const form = document.querySelector(".input-group");
 let postsArr = [];
 
 function renderPosts() {
@@ -22,7 +22,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     renderPosts();
   });
 
-document.querySelector(".input-group").addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   const postTitle = document.querySelector(".input").value;
   const postContent = document.querySelector(".content").value;
@@ -45,6 +45,6 @@ document.querySelector(".input-group").addEventListener("submit", (e) => {
         renderPosts();
       });
 
-    inputs.forEach((input) => (input.value = ""));
+    form.reset();
   }
 });

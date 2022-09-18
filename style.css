@@ -67,11 +67,8 @@ nav {
   white-space: nowrap;
 }
 
+.button:hover,
 .button:focus {
-  text-decoration: none;
-}
-
-.button:hover {
   text-decoration: none;
 }
 
